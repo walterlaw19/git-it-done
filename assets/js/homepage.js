@@ -24,7 +24,7 @@ var getUserRepos = function(user) {
   // make a request to the url
   fetch(apiUrl)
   .then(function(response) {
-    // request was successful
+    // request was sucdcessful
     if (response.ok) {
       response.json().then(function(data) {
         displayRepos(data, user);
